@@ -9,7 +9,7 @@ animal_int = raw_input('1) Cat Facts 2) Dog Facts ... anything else will exit : 
 while True:
     try:
         receiver = raw_input('Target Phone # ? : ')
-        sender = "+15873166702"
+        sender = "Your Twilio Phone Number"
         client = TwilioRestClient(account_sid, auth_token)
         if animal_int=='1':
             r_in = requests.get('http://catfacts-api.appspot.com/api/facts?number=1')
